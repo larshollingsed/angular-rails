@@ -20,6 +20,13 @@ class PostsController < ApplicationController
     respond_with post
   end
   
+  def downvote
+    post = Post.find(params[:id])
+    post.decrement!(:upvotes)
+    
+    respond_with post
+  end
+  
   def as_json(options = {})
     super(options.merge(include: [:user, comments: {include: :user}]))
   end
