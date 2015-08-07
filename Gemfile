@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'angular-rails-templates', '0.2.0'
 gem 'sprockets', '2.12.3'
 gem 'responders', '~> 2.0'
+gem 'angular_rails_csrf'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
